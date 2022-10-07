@@ -1,0 +1,30 @@
+{
+  "name": "telegram-access-permission-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:prosazhin/telegram-access-permission-bot.git",
+  "license": "MIT",
+  "author": "Евгений Сажин",
+  "scripts": {
+    "dev": "npx nodemon index.js",
+    "create": "npx pm2 start index.js --name telegram-assistent-bot",
+    "start": "npx pm2 start telegram-assistent-bot",
+    "stop": "npx pm2 stop telegram-assistent-bot",
+    "restart": "npx pm2 restart telegram-assistent-bot",
+    "delete": "npx pm2 delete telegram-assistent-bot",
+    "list": "npx pm2 list",
+    "htop": "npx pm2 monit"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.5",
+    "telegraf": "^4.10.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-es2015-node": "^6.1.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}
