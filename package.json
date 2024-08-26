@@ -1,10 +1,14 @@
 {
   "name": "telegram-access-permission-bot",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:prosazhin/telegram-access-permission-bot.git",
   "license": "MIT",
-  "author": "Евгений Сажин",
+  "author": "Evgenii Sazhin <prosazhin@gmail.com> (https://prosazhin.ru)",
+  "main": "index.js",
+  "homepage": "https://github.com/prosazhin/telegram-access-permission-bot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prosazhin/telegram-access-permission-bot.git"
+  },
   "scripts": {
     "dev": "npx nodemon index.js",
     "create": "npx pm2 start index.js --name telegram-assistent-bot",
